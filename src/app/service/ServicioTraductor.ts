@@ -18,7 +18,7 @@ class ServicioTraductor {
       const mensajeRespuesta = respuesta.choices[0].message.content;
       console.log("Mensaje de respuesta:", mensajeRespuesta);
       res.status(200).json({
-        mensajeRespuesta,
+        traduccion: mensajeRespuesta,
       });
     } catch (error) {
       console.error("Error en la traducción:", error);
